@@ -26,20 +26,22 @@ double scoreActivity(const Item& item, const std::vector<Item>& schedule) {
     std::unordered_multiset<int> facTimes; // times that faculty member is scheduled
     facTimes.insert(item.time);
 
+    bool matched = false;
     for (const Item& item2 : schedule) {
         if (item.activity.id == item2.activity.id) continue;
 
         // Double classes (A/B)
         if (item2.activity.id.substr(0, item2.activity.id.length() - 1)
             == item.activity.id.substr(0, item.activity.id.length() - 1)) {
-            if (abs(item.time - item2.time) > 4) score += 0.5;
+            if (abs(item.time - item2.time) >= 4) score += 0.5;
             else if (item.time == item2.time) score -= 0.5;
         } // 101 and 191
         else if ((item.activity.id.at(item.activity.id.length() - 1) == 'A'
             || item.activity.id.at(item.activity.id.length() - 1) == 'B')
             && (item2.activity.id.at(item2.activity.id.length() - 1) == 'A'
                 || item2.activity.id.at(item2.activity.id.length() - 1) == 'B')) {
-            if (abs(item.time - item2.time) == 1) {
+            if (abs(item.time - item2.time) == 1 && !matched) {
+                matched = true; // only score this 1 time each
                 // Location is too far
                 if ((item.room.building == "Roman" || item.room.building == "Beach")
                     && (item2.room.building != "Roman" && item2.room.building != "Beach"))
@@ -89,7 +91,7 @@ double scoreActivity(const Item& item, const std::vector<Item>& schedule) {
 
 Genome fillGenome() {
     // Create genome with start and end times
-    Genome genome(11, 15);
+    Genome genome(10, 15);
 
     // Add facilitators
     std::string facilitators[10] = { "Lock", "Glen", "Banks", "Richards", "Shaw",

@@ -10,8 +10,8 @@
 #include "Genome.h"
 #include "configure.h"
 
-const int POP_SIZE = 500;
-const int MIN_GENS = 500;
+const int POP_SIZE = 1000;
+const int MIN_GENS = 200;
 const double MUTATION_RATE = 0.1;
 
 Genome fillGenome();
