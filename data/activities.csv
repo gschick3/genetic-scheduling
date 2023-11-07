@@ -1,0 +1,11 @@
+SLA100A,50,Glen,Lock,Banks,Zeldin,Numen,Richards
+SLA100B,50,Glen,Lock,Banks,Zeldin,Numen,Richards
+SLA191A,50,Glen,Lock,Banks,Zeldin,Numen,Richards
+SLA191B,50,Glen,Lock,Banks,Zeldin,Numen,Richards
+SLA201,50,Glen,Banks,Zeldin,Shaw,Numen,Richards,Singer
+SLA291,50,Lock,Banks,Zeldin,Singer,Numen,Richards,Shaw,Tyler
+SLA303,60,Glen,Zeldin,Banks,,Numen,Singer,Shaw
+SLA304,25,Glen,Banks,Tyler,,Numen,Singer,Shaw,Richards,Uther,Zeldin
+SLA394,20,Tyler,Singer,,,Richards,Zeldin
+SLA449,60,Tyler,Singer,Shaw,,Zeldin,Uther
+SLA451,100,Tyler,Singer,Shaw,,Zeldin,Uther,Richards,Banks

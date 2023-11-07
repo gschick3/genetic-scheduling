@@ -1,0 +1,12 @@
+SLA100A	Beach 201	14	Banks
+SLA100B	Frank 119	11	Zeldin
+SLA191A	Loft 310	12	Zeldin
+SLA191B	Frank 119	13	Singer
+SLA201	Beach 301	13	Banks
+SLA291	Loft 206	14	Singer
+SLA303	Beach 301	12	Banks
+SLA304	Beach 301	15	Banks
+SLA394	Slater 3	13	Zeldin
+SLA449	Loft 310	15	Singer
+SLA451	Loft 310	14	Zeldin
+Score: 19.9
