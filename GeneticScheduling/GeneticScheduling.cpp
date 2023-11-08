@@ -10,9 +10,9 @@
 #include "Genome.h"
 #include "configure.h"
 
-const int POP_SIZE = 1000;
-const int MIN_GENS = 200;
-const double MUTATION_RATE = 0.1;
+const int POP_SIZE = 1000; // CHANGED: population size doubled
+const int MIN_GENS = 200; // CHANGED: minimum number of generations doubled
+const double MUTATION_RATE = 0.1; // CHANGED: mutation rate x10
 
 Genome fillGenome();
 double scoreActivity(const Item& item, const std::vector<Item>& schedule);

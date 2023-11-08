@@ -48,7 +48,7 @@ void Schedule::scoreActivities(double(*scoringFunc)(const Item&, const std::vect
 void Schedule::printSchedule(std::ostream& stream) const {
     for (const Item& i : schedule) {
         stream << i.activity.id << "\t" << i.room.building << " " << i.room.num
-            << "\t" << i.time << "\t" << i.facilitator << "\n";
+            << "\t" << i.time << ":00\t" << i.facilitator << "\n";
     }
     stream << "Score: " << fitnessScore << "\n";
 }

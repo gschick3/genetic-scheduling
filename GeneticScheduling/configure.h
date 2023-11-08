@@ -33,7 +33,7 @@ double scoreActivity(const Item& item, const std::vector<Item>& schedule) {
         // Double classes (A/B)
         if (item2.activity.id.substr(0, item2.activity.id.length() - 1)
             == item.activity.id.substr(0, item.activity.id.length() - 1)) {
-            if (abs(item.time - item2.time) >= 4) score += 0.5;
+            if (abs(item.time - item2.time) >= 4) score += 0.5; // CHANGED: classes are 4 or more hours apart, not more than 4
             else if (item.time == item2.time) score -= 0.5;
         } // 101 and 191
         else if ((item.activity.id.at(item.activity.id.length() - 1) == 'A'

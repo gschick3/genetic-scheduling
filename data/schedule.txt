@@ -1,12 +1,12 @@
-SLA100A	Frank 119	10	Banks
-SLA100B	Beach 201	14	Banks
-SLA191A	Loft 206	11	Banks
-SLA191B	Roman 201	15	Banks
-SLA201	Roman 201	11	Glen
-SLA291	Frank 119	15	Singer
-SLA303	Beach 301	15	Glen
-SLA304	Roman 216	10	Glen
-SLA394	Frank 119	14	Singer
-SLA449	Loft 206	12	Singer
-SLA451	Loft 310	13	Singer
+SLA100A	Frank 119	10:00	Banks
+SLA100B	Beach 201	14:00	Banks
+SLA191A	Loft 206	11:00	Banks
+SLA191B	Roman 201	15:00	Banks
+SLA201	Roman 201	11:00	Glen
+SLA291	Frank 119	15:00	Singer
+SLA303	Beach 301	15:00	Glen
+SLA304	Roman 216	10:00	Glen
+SLA394	Frank 119	14:00	Singer
+SLA449	Loft 206	12:00	Singer
+SLA451	Loft 310	13:00	Singer
 Score: 22
